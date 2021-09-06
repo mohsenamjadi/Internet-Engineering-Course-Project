@@ -1,0 +1,48 @@
+.app-background {
+    margin-top: 70px;
+    position: relative;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+}
+
+.app-background .behind-img {
+    position: relative;
+    width: 100%;
+    filter: blur(2px) saturate(160%);
+}
+
+.app-background .center-things {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.app-background .center-things .bolbol-icon {
+    width: 170px;
+    box-shadow: 0 0px 8px -3px black;
+    border-radius: 50%;
+}
+
+.app-background .center-things .bolbol-title {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+.app-background .over-img{
+    position: relative;
+    width:100%;
+    top: -45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}

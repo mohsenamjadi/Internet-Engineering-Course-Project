@@ -1,0 +1,73 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?280e711c1e6420a917a97f0439629285") format("truetype"),
+url("./flaticon.woff?280e711c1e6420a917a97f0439629285") format("woff"),
+url("./flaticon.woff2?280e711c1e6420a917a97f0439629285") format("woff2"),
+url("./flaticon.eot?280e711c1e6420a917a97f0439629285#iefix") format("embedded-opentype"),
+url("./flaticon.svg?280e711c1e6420a917a97f0439629285#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "add": "\f101",
+    "calendar": "\f102",
+    "clock-circular-outline": "\f103",
+    "copyright": "\f104",
+    "facebook": "\f105",
+    "instagram": "\f106",
+    "linkedin-logo": "\f107",
+    "log-out": "\f108",
+    "loupe": "\f109",
+    "refresh-arrow": "\f10a",
+    "trash-bin": "\f10b",
+    "twitter-logo-on-black-background": "\f10c",
+);
+
+.flaticon-add:before {
+    content: map-get($flaticon-map, "add");
+}
+.flaticon-calendar:before {
+    content: map-get($flaticon-map, "calendar");
+}
+.flaticon-clock-circular-outline:before {
+    content: map-get($flaticon-map, "clock-circular-outline");
+}
+.flaticon-copyright:before {
+    content: map-get($flaticon-map, "copyright");
+}
+.flaticon-facebook:before {
+    content: map-get($flaticon-map, "facebook");
+}
+.flaticon-instagram:before {
+    content: map-get($flaticon-map, "instagram");
+}
+.flaticon-linkedin-logo:before {
+    content: map-get($flaticon-map, "linkedin-logo");
+}
+.flaticon-log-out:before {
+    content: map-get($flaticon-map, "log-out");
+}
+.flaticon-loupe:before {
+    content: map-get($flaticon-map, "loupe");
+}
+.flaticon-refresh-arrow:before {
+    content: map-get($flaticon-map, "refresh-arrow");
+}
+.flaticon-trash-bin:before {
+    content: map-get($flaticon-map, "trash-bin");
+}
+.flaticon-twitter-logo-on-black-background:before {
+    content: map-get($flaticon-map, "twitter-logo-on-black-background");
+}

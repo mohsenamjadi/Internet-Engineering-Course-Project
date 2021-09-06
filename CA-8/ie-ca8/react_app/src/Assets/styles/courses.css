@@ -1,0 +1,525 @@
+@import "header.css";
+@import "main.css";
+@import "footer.css";
+@import "search-bar.css";
+@import "../fonts/font/flaticon.css";
+@import "../fonts/vazir-fonts/fonts.css";
+
+.courses-charge-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    direction: rtl;
+}
+
+.courses-charge-wrapper .courses-charge {
+    width: 100%;
+    display: flex;
+    margin: 50px 60px 0px 60px;
+    justify-content: center;
+    align-items: baseline;
+    position: relative;
+    border: 2px solid #0087E0;
+    border-radius: 5px;
+    background: white;
+}
+
+.courses-charge-wrapper .courses-charge .selector {
+    position: absolute;
+    top: -20px;
+    min-width: 200px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    height: 40px;
+    z-index: 100000000;
+    align-items: center;
+    width: 10%;
+    box-shadow: 0 0 10px -4px black;
+}
+
+.courses-charge-wrapper .courses-charge .selector-item {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    overflow: hidden;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.courses-charge-wrapper .courses-charge .selector-lower {
+    position: absolute;
+    bottom: 0;
+    min-width: 280px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    border-top: 2px solid dodgerblue;
+}
+
+.courses-charge-wrapper .courses-charge .selector-upper {
+    position: absolute;
+    min-width: 280px;
+    display: flex;
+    justify-content: center;
+    z-index: 100000000;
+    align-items: center;
+    width: 100%;
+    border-bottom: 2px solid dodgerblue;
+}
+
+.courses-charge-wrapper .courses-charge .active-item {
+    background: #0087E0;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.courses-charge-wrapper .courses-charge .courses {
+    overflow:scroll;
+    border: 1px solid grey;
+}
+
+.courses-charge-wrapper .courses-charge .courses::-webkit-scrollbar {
+    display: none;
+}
+
+.courses-charge-wrapper .courses-charge .courses .course-item {
+    border-bottom: 1px solid grey;
+    line-height: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.courses-charge-wrapper .courses-charge .courses .course-item > div {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.courses-charge-wrapper .courses-charge .courses .course-item:hover{
+    border: solid dodgerblue;
+    border-width: 1px 2px 1px 1px;
+}
+
+.courses-charge-wrapper .courses-charge .courses .course-item .course-index {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid grey;
+    font-size: 20px;
+    color: white;
+}
+
+.courses-charge-wrapper .courses-charge .courses .course-item .course-index .accent-pink-gradient {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 89, 94, 0.6);
+    opacity: 0.9;
+    border-right: 5px solid #FF595E;
+    border-radius: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.courses-charge-wrapper .courses-charge .courses .course-item .course-delete-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: red;
+    cursor: pointer;
+    text-align: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 10px;
+}
+
+.courses-charge-wrapper .courses-charge .courses .course-item .course-add-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 10px;
+    background: #28A745;
+    cursor: pointer;
+}
+
+.courses-charge-wrapper .courses-charge .courses .course-item .course-listEntezar-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-left: 1px solid grey;
+    font-size: 25px;
+    color: white;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 10px;
+    background: gray;
+    cursor: pointer;
+}
+
+.courses-charge-wrapper .courses-charge .courses .course-item .course-delete-icon:hover {
+    transform: scale(1.05);
+}
+
+.courses-charge-wrapper .courses-charge .courses .course-item .course-cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid grey;
+    font-size: 20px;
+    color: blue;
+}
+
+.courses-charge-wrapper .courses-charge .courses .course-item .course-cell- {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-left: 1px solid grey;
+    font-size: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 100%;
+}
+
+
+.courses-charge-wrapper .courses-charge .courses .course-item .course-cell- .status-sabt-shode {
+    border: 2px solid #28A745;
+    border-radius: 10px;
+    height: 3.5rem;
+    width: 17rem;
+    color: #28A745;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.courses-charge-wrapper .courses-charge .courses .course-item .course-cell- .status-sabt-nahayi-nashode {
+    border: 2px solid #1FA5FF;
+    border-radius: 10px;
+    height: 3.5rem;
+    width: 17rem;
+    color: #1FA5FF;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.courses-charge-wrapper .courses-charge .courses .course-item .course-cell- .status-dar-entezar {
+    border: 2px solid gray;
+    border-radius: 10px;
+    height: 3.5rem;
+    width: 17rem;
+    color: gray;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.status-omomi {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    justify-self: flex-start;
+    border: 2px solid #EDBB41;
+    background-color: #EDBB41;
+    border-radius: 10px;
+    line-height: 2.5rem;
+    height: 3rem;
+    width: 6rem;
+    color: white;
+    margin-top: 4px;
+    margin-bottom: 2px;
+}
+
+.status-darse-asli {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    justify-self: flex-start;
+    border: 2px solid #06D6A0;
+    background-color: #06D6A0;
+    border-radius: 10px;
+    line-height: 2.5rem;
+    height: 3rem;
+    width: 6rem;
+    color: white;
+    margin-top: 4px;
+    margin-bottom: 2px;
+}
+
+
+.status-darse-paaye {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    justify-self: flex-start;
+    border: 2px solid #FF595E;
+    background-color: #FF595E;
+    border-radius: 10px;
+    line-height: 2.5rem;
+    height: 3rem;
+    width: 6rem;
+    color: white;
+    margin-top: 4px;
+    margin-bottom: 2px;
+}
+
+.status-darse-takhasosi {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    justify-self: flex-start;
+    border: 2px solid #0087E0;
+    background-color: #0087E0;
+    border-radius: 10px;
+    line-height: 2.5rem;
+    height: 3rem;
+    width: 6rem;
+    color: white;
+    margin-top: 4px;
+    margin-bottom: 2px;
+}
+
+.courses-charge-wrapper .courses-charge .courses .course-item .course-status {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border-left: 1px solid;
+}
+
+.courses-charge-wrapper
+.courses-charge
+.courses
+.course-item
+.course-status
+.status-box {
+    line-height: 25px;
+    display: flex;
+    justify-self: center;
+    margin: 0 auto;
+    padding: 5px 30px;
+    border-radius: 8px;
+}
+
+.units-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    color: dodgerblue;
+}
+
+.btn-reset {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    border-radius: 8px;
+    background: #AAAAAA;
+    color: white;
+    font-size: 30px;
+    text-align:center;
+    position: relative;
+}
+
+.btn-reset .i {
+    position: absolute;
+}
+
+.btn-submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 8px;
+    background: #06D6A0;
+    color: white;
+    width: 100%;
+    font-size: large;
+}
+
+.btn-noe-course {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid grey;
+    border-radius: 8px;
+    background: white;
+    color: grey;
+    font-size: large;
+    height: 50px;
+}
+
+.btn-noe-course:hover {
+    background: #1FA5FF;
+    border: none;
+}
+
+.each-box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.each-row-with-items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px 20px 20px 20px;
+}
+
+/*.courses-charge-wrapper .courses-charge .courses .course-item:hover div.appear {*/
+/*    display:block;*/
+/*}*/
+
+/*div.appear{*/
+/*    background: none repeat scroll 0 0 #F8F8F8;*/
+/*    border: 5px solid #DFDFDF;*/
+/*    color: #717171;*/
+/*    font-size: 13px;*/
+/*    height: 30px;*/
+/*    letter-spacing: 1px;*/
+/*    line-height: 30px;*/
+/*    margin: 0 auto;*/
+/*    position: relative;*/
+/*    text-align: center;*/
+/*    text-transform: uppercase;*/
+/*    top: -80px;*/
+/*    left:-30px;*/
+/*    display:none;*/
+/*    padding:0 20px;*/
+/*}*/
+
+/*div.appear:after{*/
+/*    content:'';*/
+/*    position:absolute;*/
+/*    bottom:-10px;*/
+/*    width:10px;*/
+/*    height:10px;*/
+/*    border-bottom:5px solid #dfdfdf;*/
+/*    border-right:5px solid #dfdfdf;*/
+/*    background:#f8f8f8;*/
+/*    left:50%;*/
+/*    margin-left:-5px;*/
+/*    -moz-transform:rotate(45deg);*/
+/*    -webkit-transform:rotate(45deg);*/
+/*    transform:rotate(45deg);*/
+/*}*/
+
+
+/*[data-tooltip] {*/
+/*    display: inline-block;*/
+/*    position: relative;*/
+/*    cursor: help;*/
+/*    padding: 4px;*/
+/*}*/
+/*!* Tooltip styling *!*/
+/*[data-tooltip]:before {*/
+/*    content: attr(data-tooltip);*/
+/*    display: none;*/
+/*    position: absolute;*/
+/*    background: #000;*/
+/*    color: #fff;*/
+/*    padding: 4px 8px;*/
+/*    font-size: 14px;*/
+/*    line-height: 1.4;*/
+/*    min-width: 100px;*/
+/*    text-align: center;*/
+/*    border-radius: 4px;*/
+/*}*/
+/*!* Dynamic horizontal centering *!*/
+/*[data-tooltip-position="top"]:before,*/
+/*[data-tooltip-position="bottom"]:before {*/
+/*    left: 50%;*/
+/*    -ms-transform: translateX(-50%);*/
+/*    -moz-transform: translateX(-50%);*/
+/*    -webkit-transform: translateX(-50%);*/
+/*    transform: translateX(-50%);*/
+/*}*/
+/*!* Dynamic vertical centering *!*/
+/*[data-tooltip-position="right"]:before,*/
+/*[data-tooltip-position="left"]:before {*/
+/*    top: 50%;*/
+/*    -ms-transform: translateY(-50%);*/
+/*    -moz-transform: translateY(-50%);*/
+/*    -webkit-transform: translateY(-50%);*/
+/*    transform: translateY(-50%);*/
+/*}*/
+/*[data-tooltip-position="top"]:before {*/
+/*    bottom: 100%;*/
+/*    margin-bottom: 6px;*/
+/*}*/
+/*[data-tooltip-position="right"]:before {*/
+/*    left: 100%;*/
+/*    margin-left: 6px;*/
+/*}*/
+/*[data-tooltip-position="bottom"]:before {*/
+/*    top: 100%;*/
+/*    margin-top: 6px;*/
+/*}*/
+/*[data-tooltip-position="left"]:before {*/
+/*    right: 100%;*/
+/*    margin-right: 6px;*/
+/*}*/
+
+/*!* Tooltip arrow styling/placement *!*/
+/*[data-tooltip]:after {*/
+/*    content: '';*/
+/*    display: none;*/
+/*    position: absolute;*/
+/*    width: 0;*/
+/*    height: 0;*/
+/*    border-color: transparent;*/
+/*    border-style: solid;*/
+/*}*/
+/*!* Dynamic horizontal centering for the tooltip *!*/
+/*[data-tooltip-position="top"]:after,*/
+/*[data-tooltip-position="bottom"]:after {*/
+/*    left: 50%;*/
+/*    margin-left: -6px;*/
+/*}*/
+/*!* Dynamic vertical centering for the tooltip *!*/
+/*[data-tooltip-position="right"]:after,*/
+/*[data-tooltip-position="left"]:after {*/
+/*    top: 50%;*/
+/*    margin-top: -6px;*/
+/*}*/
+/*[data-tooltip-position="top"]:after {*/
+/*    bottom: 100%;*/
+/*    border-width: 6px 6px 0;*/
+/*    border-top-color: #000;*/
+/*}*/
+/*[data-tooltip-position="right"]:after {*/
+/*    left: 100%;*/
+/*    border-width: 6px 6px 6px 0;*/
+/*    border-right-color: #000;*/
+/*}*/
+/*[data-tooltip-position="bottom"]:after {*/
+/*    top: 100%;*/
+/*    border-width: 0 6px 6px;*/
+/*    border-bottom-color: #000;*/
+/*}*/
+/*[data-tooltip-position="left"]:after {*/
+/*    right: 100%;*/
+/*    border-width: 6px 0 6px 6px;*/
+/*    border-left-color: #000;*/
+/*}*/
+/*!* Show the tooltip when hovering *!*/
+/*[data-tooltip]:hover:before,*/
+/*[data-tooltip]:hover:after {*/
+/*    display: block;*/
+/*    z-index: 50;*/
+/*}*/

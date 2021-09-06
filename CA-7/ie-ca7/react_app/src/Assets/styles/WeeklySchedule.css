@@ -1,0 +1,184 @@
+@import "header.css";
+@import "main.css";
+@import "footer.css";
+@import "../fonts/font/flaticon.css";
+@import "../fonts/vazir-fonts/fonts.css";
+
+body {
+    color: #546e7a;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.title {
+    background: #217346;
+    text-align: center;
+    display: grid;
+    place-content: center;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.timetable {
+    display: grid;
+    grid-template-areas: ". week" "time content";
+    grid-template-columns: 120px;
+    grid-template-rows: 60px;
+    margin: 180px 180px 180px 180px;
+    direction: rtl;
+    height: 100%;
+    border-style: solid;
+    border-color: #1FA5FF;
+    border-radius: 10px;
+    position: relative;
+}
+
+.timetable .selector-upper {
+    position: absolute;
+    min-width: 280px;
+    display: flex;
+    justify-content: center;
+    z-index: 100000000;
+    align-items: center;
+    width: 100%;
+    border-bottom: 2px solid dodgerblue;
+}
+
+.timetable .accent-pink-gradient {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: rgba(255, 89, 94, 0.5);
+    opacity: 0.9;
+    transition: 0.2s ease box-shadow, 0.2s ease transform;
+    border-right: 5px solid #FF595E;
+    border-radius: 10px;
+}
+
+.timetable .accent-pink-gradient:hover {
+    box-shadow: 0 20px 30px 0 rgba(238, 142, 188, 0.3);
+    transform: scale(1.05);
+}
+
+.timetable .accent-orange-gradient {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: rgba(237, 187, 65, 0.5);
+    opacity: 0.9;
+    transition: 0.2s ease box-shadow, 0.2s ease transform;
+    border-right: 5px solid #EDBB41;
+    border-radius: 10px;
+}
+
+.timetable .accent-orange-gradient:hover {
+    box-shadow: 0 20px 30px 0 rgba(238, 192, 142, 0.3);
+    transform: scale(1.05);
+}
+
+.timetable .accent-green-gradient {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 150%;
+    background: rgba(6, 214, 160, 0.5);
+    opacity: 0.9;
+    transition: 0.2s ease box-shadow, 0.2s ease transform;
+    border-right: 5px solid #06D6A0;
+    border-radius: 10px;
+}
+
+.timetable .accent-green-gradient:hover {
+    box-shadow: 0 20px 30px 0 rgba(188, 238, 142, 0.3);
+    transform: scale(1.05);
+}
+
+.timetable .accent-blue-gradient {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: rgba(0, 135, 224, 0.5);
+    opacity: 0.9;
+    transition: 0.2s ease box-shadow, 0.2s ease transform;
+    border-right: 5px solid #0087E0;
+    border-radius: 10px;
+}
+
+.timetable .accent-blue-gradient:hover {
+    box-shadow: 0 20px 30px 0 rgba(142, 238, 192, 0.3);
+    transform: scale(1.05);
+}
+
+.timetable .weekend {
+    background: #fbfbfc;
+    color: #87a1ad;
+}
+
+.timetable .week-names {
+    grid-area: week;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.timetable .week-names > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 1px 0 0 #eceff1;
+}
+
+.timetable .time-interval {
+    grid-area: time;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    font-size: 14px;
+}
+
+.timetable .time-interval > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 1px 0 0 #eceff1;
+}
+
+.timetable .content {
+    grid-area: content;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.timetable .content > div {
+    box-shadow: inset 1px 0 0 #eceff1, inset 0 1px 0 0 #eceff1;
+}
+
+.calender-icon{
+    position: absolute;
+    bottom: 5px;
+    margin-top: 40px;
+    font-size: 25px;
+    color: #1FA5FF;
+}
+
+.schedule-title {
+    position: sticky;
+    margin-right: 35px;
+}
+
+.schedule-term-num {
+    margin-left: 15px;
+}

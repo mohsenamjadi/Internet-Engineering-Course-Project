@@ -1,0 +1,59 @@
+# This file is a template, and might need editing before it works on your project.
+variables:
+    FRONT_TAGNAME: "front"
+    BACK_TAGNAME: "back"
+    
+stages:
+    - build
+    - deploy
+
+docker-build-master-backend:
+  # Official docker image.
+  image: docker:latest
+  stage: build
+  services:
+    - docker:dind
+  before_script:
+    - docker login -u "$DOCKER_HUB_REGISTRY_USER" -p "$DOCKER_HUB_REGISTRY_PASSWORD"
+  script:
+    - docker build --pull -t "$DOCKER_HUB_REGISTRY_IMAGE":"$BACK_TAGNAME" ./server
+    - docker push "$DOCKER_HUB_REGISTRY_IMAGE":"$BACK_TAGNAME"
+  only:
+    - master
+    
+    
+docker-build-master-frontend:
+  # Official docker image.
+  image: docker:latest
+  stage: build
+  services:
+    - docker:dind
+  before_script:
+    - docker login -u "$DOCKER_HUB_REGISTRY_USER" -p "$DOCKER_HUB_REGISTRY_PASSWORD"
+  script:
+    - docker build --pull -t "$DOCKER_HUB_REGISTRY_IMAGE":"$FRONT_TAGNAME" ./react_app
+    - docker push "$DOCKER_HUB_REGISTRY_IMAGE":"$FRONT_TAGNAME"
+  only:
+    - master
+
+
+deployment:
+  image: ubuntu:20.10
+  stage: deploy
+  script:
+    - apt-get update
+    - apt-get install openconnect -y
+    - apt-get install curl
+    - echo '216836' > vpn_conf
+    - curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
+    - chmod +x ./kubectl
+    - mv ./kubectl /usr/local/bin/kubectl
+    - kubectl version --client
+    - echo $KUBE_CONFIG | base64 -d > kube.config
+    - export KUBECONFIG=kube.config
+    - kubectl config view
+    - openconnect s30.serspeed.info:555 --user=3m374435 --servercert pin-sha256:bP61cIU9tXSiZ0BEbt1OYEvYoQNMOXRMGug3wbbssNI= --passwd-on-stdin < vpn_conf --background
+    - kubectl rollout restart deployment back
+    - kubectl rollout status deployment back
+    - kubectl rollout restart deployment front
+    - kubectl rollout status deployment front

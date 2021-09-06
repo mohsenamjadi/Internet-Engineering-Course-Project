@@ -1,0 +1,45 @@
+@import "../fonts/font/flaticon.css";
+@import "../fonts/vazir-fonts/fonts.css";
+
+main {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    direction: rtl;
+    font-family: "Vazir", serif !important;
+    background-color: #f7fff7 !important;
+    position: relative;
+}
+
+.sub-header-red {
+    width: 100%;
+    height: 150px;
+    background: #ff6b6b;
+    color: white;
+    margin-bottom: 115px;
+}
+
+.sub-header-over {
+    position: relative;
+    width: 100%;
+    top: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-header-over-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10%;
+    border: solid 7px white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.sub-header-over-text {
+    display: flex;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: bold;
+}

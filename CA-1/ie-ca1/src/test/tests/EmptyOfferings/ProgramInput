@@ -1,0 +1,2 @@
+addStudent {"studentId":"810196123","name":"Ali","enteredAt":"1396"}
+getOfferings {"studentId":"810196123"}

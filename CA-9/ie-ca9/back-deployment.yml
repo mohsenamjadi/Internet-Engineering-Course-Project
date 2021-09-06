@@ -1,0 +1,47 @@
+apiVersion: apps/v1           # API version
+kind: Deployment              # Type of kubernetes resource
+metadata:
+  name: back    # Name of the kubernetes resource
+  labels:                     # Labels that will be applied to this resource
+    app: back
+spec:
+  replicas: 2                 # No. of replicas/pods to run in this deployment
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 1
+  selector:
+    matchLabels:              # The deployment applies to any pods matching the specified labels
+      app: back
+  template:                   # Template for creating the pods in this deployment
+    metadata:
+      labels:                 # Labels that will be applied to each Pod in this deployment
+        app: back
+    spec:                     # Spec for the containers that will be run in the Pods
+      containers:
+      - name: back
+        image: alijavidan/ie-ca9:back
+        imagePullPolicy: Always
+        ports:
+          - name: http
+            containerPort: 8080 # The port that the container exposes
+        resources:
+          limits:
+            cpu: "333m"
+            memory: "500Mi"
+---
+apiVersion: v1                # API version
+kind: Service                 # Type of the kubernetes resource
+metadata:                     
+  name: back    # Name of the kubernetes resource
+  labels:                     # Labels that will be applied to this resource
+    app: back
+spec:                         
+  type: NodePort              # The service will be exposed by opening a Port on each node and proxying it. 
+  selector:
+    app: back   # The service exposes Pods with label `app=back`
+  ports:                      # Forward incoming connections on port 8080 to the target port 8080
+  - name: http
+    port: 8080
+    nodePort: 31001
+    targetPort: 8080

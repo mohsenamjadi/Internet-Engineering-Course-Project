@@ -1,0 +1,61 @@
+@import url("https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css");
+
+header {
+  position: fixed;
+  height: 70px;
+  width: 100%;
+  top: 0px;
+  background: white;
+  box-shadow: 0px 8px 7px -12px black;
+  z-index: 100000000000;
+  direction: rtl;
+  font-family: "Vazir" !important;
+}
+
+.header {
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 35px;
+}
+
+.logout {
+  color: red;
+}
+
+.logout i:first-child {
+  position: relative;
+  top: 5px;
+  right: 2px;
+  font-size: 20px ;
+}
+
+.bolbol-icon img {
+  width: 60px;
+}
+
+.cart {
+  position: relative;
+}
+
+.cart .cart-icon {
+  position: relative;
+}
+
+.cart .cart-items {
+  position: absolute;
+  top: 0;
+  z-index: 10000000;
+  background: #4ecdc4;
+  width: 15px;
+  height: 15px;
+  right: -8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  font-size: 12px;
+  color: white;
+}

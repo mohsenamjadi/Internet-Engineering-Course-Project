@@ -1,0 +1,49 @@
+{
+  "name": "react_app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "animate.css": "^3.7.2",
+    "axios": "^0.21.1",
+    "bootstrap": "^4.6.0",
+    "flickity": "^2.2.1",
+    "node-sass": "latest",
+    "prop-types": "^15.7.2",
+    "query-string": "^7.0.0",
+    "react": "^16.13.1",
+    "react-animations": "^1.0.0",
+    "react-bootstrap": "^1.5.2",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "^4.0.3",
+    "react-toastify": "^5.5.0",
+    "rxjs": "latest",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^2.0.3",
+    "use-query-params": "^1.2.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

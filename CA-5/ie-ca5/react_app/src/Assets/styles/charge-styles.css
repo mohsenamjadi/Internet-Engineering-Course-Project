@@ -1,0 +1,30 @@
+@import "header.css";
+@import "footer.css";
+@import "../fonts/font/flaticon.css";
+@import "../fonts/vazir-fonts/fonts.css";
+
+html {
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  direction: rtl;
+  font-family: "Vazir" !important;
+  background-color: #f7fff7 !important;
+  height: 100%;
+  /* position: relative; */
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block; /* remove extra space below image */
+}
+
+main {
+  /* margin: 0 auto -70px; */
+  min-height: 100%;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}

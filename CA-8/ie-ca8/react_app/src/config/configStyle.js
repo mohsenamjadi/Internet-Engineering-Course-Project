@@ -1,0 +1,5 @@
+export let PRIMARY_COLOR = "#1A535C";
+export let PRIMARY_VARIANT_COLOR = "#4ECDC4";
+export let BACKGROUND_COLOR = "#F7FFF7";
+export let SECONDARY_COLOR = "#FF6B6B";
+export let SECONDARY_VARIANT_COLOR = "#FFE66D";

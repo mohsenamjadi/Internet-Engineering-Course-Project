@@ -1,0 +1,6 @@
+addOffering {"code":"81013602","name":"Internet Engineering","Instructor":"Ehsan Khamespanah","units":6,"classTime": {"days": ["Saturday","Monday"], "time":"10:30-12"},"examTime": {"start": "2021-9-01T08:00:00","end": "2021-9-01T08:00:00"},"capacity":60,"prerequisites": ["Advanced Programming","Operating Systems"]}
+addOffering {"code":"81015619","name":"Compiler","Instructor":"Ehsan Khamespanah","units":6,"classTime": {"days": ["Monday","Wednesday"], "time":"14-15:30"},"examTime": {"start": "2021-9-01T08:00:00","end": "2021-9-01T08:00:00"},"capacity":60,"prerequisites": ["Advanced Programming","Operating Systems"]}
+addStudent {"studentId":"810196123","name":"Ali","enteredAt":"1396"}
+addToWeeklySchedule {"studentId":"810196123","code":"81013602"}
+addToWeeklySchedule {"studentId":"810196123","code":"81015619"}
+finalize {"studentId":"810196123"}
