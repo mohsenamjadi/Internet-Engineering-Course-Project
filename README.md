@@ -38,9 +38,9 @@ This project is implemented in 9 phases as below:
 <img src="screenshots/courses2.PNG" alt="courses" width="800"/>
 <img src="screenshots/courses3.PNG" alt="courses" width="800"/>
 <img src="screenshots/courses4.PNG" alt="courses" width="800"/>
-<img src="screenshots/weekly-schedule.PNG" alt="weekly-schedule" width="400"/>
+<img src="screenshots/weekly-schedule.PNG" alt="weekly-schedule" width="800"/>
 
-=======
+
 # Internet-Engineering-Course-Project
 This is a course enrollment system for universities that was implemented in 9 phases
 
