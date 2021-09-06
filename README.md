@@ -1,4 +1,4 @@
-# Bolbolestan Enrollment Course
+# Bolbolestan Course Enrollment System
 <img src="screenshots/logo.png" alt="Logo" width="200" align="center"/>
 
 ## Project Description
