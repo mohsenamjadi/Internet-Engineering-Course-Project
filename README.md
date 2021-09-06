@@ -39,26 +39,3 @@ This project is implemented in 9 phases as below:
 <img src="screenshots/courses3.PNG" alt="courses" width="800"/>
 <img src="screenshots/courses4.PNG" alt="courses" width="800"/>
 <img src="screenshots/weekly-schedule.PNG" alt="weekly-schedule" width="800"/>
-
-
-# Internet-Engineering-Course-Project
-This is a course enrollment system for universities that was implemented in 9 phases
-
-
-CA1: Domain Model Pure Java, Maven, Unit Testing
-
-CA2: Simple Web Server
-
-CA3: Tomcat, MVC, Java Servlet, JSP
-
-CA4: HTML, CSS, Bootstrap
-
-CA5: React, Spring, Standard API 
-
-CA6: SQL Database, JDBC
-
-CA7: Authentication, JWT, Filter, SQL Injection
-
-CA8: Docker
-
-CA9: Kubernetes, CI/CD
