@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Bolbolestan Enrollment Course
 <img src="screenshots/logo.png" alt="Logo" width="200" align="center"/>
 
@@ -29,16 +28,16 @@ This project is implemented in 9 phases as below:
 
 ## Screenshots
 
-<img src="screenshots/signup.PNG" alt="signup" width="400"/>
-<img src="screenshots/signin.PNG" alt="signin" width="400"/>
-<img src="screenshots/home.PNG" alt="home" width="400"/>
-<img src="screenshots/home2.PNG" alt="home" width="400"/>
-<img src="screenshots/home3.PNG" alt="home" width="400"/>
-<img src="screenshots/khoroj.PNG" alt="logout" width="400"/>
-<img src="screenshots/courses1.PNG" alt="courses" width="400"/>
-<img src="screenshots/courses2.PNG" alt="courses" width="400"/>
-<img src="screenshots/courses3.PNG" alt="courses" width="400"/>
-<img src="screenshots/courses4.PNG" alt="courses" width="400"/>
+<img src="screenshots/signup.PNG" alt="signup" width="800"/>
+<img src="screenshots/signin.PNG" alt="signin" width="800"/>
+<img src="screenshots/home.PNG" alt="home" width="800"/>
+<img src="screenshots/home2.PNG" alt="home" width="800"/>
+<img src="screenshots/home3.PNG" alt="home" width="800"/>
+<img src="screenshots/khoroj.PNG" alt="logout" width="800"/>
+<img src="screenshots/courses1.PNG" alt="courses" width="800"/>
+<img src="screenshots/courses2.PNG" alt="courses" width="800"/>
+<img src="screenshots/courses3.PNG" alt="courses" width="800"/>
+<img src="screenshots/courses4.PNG" alt="courses" width="800"/>
 <img src="screenshots/weekly-schedule.PNG" alt="weekly-schedule" width="400"/>
 
 =======
@@ -63,4 +62,3 @@ CA7: Authentication, JWT, Filter, SQL Injection
 CA8: Docker
 
 CA9: Kubernetes, CI/CD
->>>>>>> f5b49b8e7bda8f4567bba530f2bdc5fa9ec39406
