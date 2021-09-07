@@ -21,7 +21,7 @@ In this project we aimed to implement a system like Golestan system (which is re
 -There is a weekly schedule page that the student can see submited courses as well
 
 
-This project is implemented in 9 phases as below:
+##This project is implemented in 9 phases as below:
 
 1. CA1: Pure java, Maven, JSON Domain, Unit Test(JUnit), Git
 2. CA2: Simple Web Server, Javalin
