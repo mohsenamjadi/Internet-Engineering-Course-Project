@@ -5,6 +5,7 @@
 
 This is an enrollment course system for universities which was developed as the Internet Engineering course project that was offered at the University of Tehran.
 In this project we aimed to implement a system like Golestan system (which is responsible for assigning courses to students) and has several features listed below:
+
 -Student could signup and signin (secured with JWT filter implementation)
 -Users could set a new password if they forget it
 -In the Home page, Some information about the student is shown(such as personal information, cumulative GPA, total passed units and also the transcript of each semester)
