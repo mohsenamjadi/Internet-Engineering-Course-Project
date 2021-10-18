@@ -14,6 +14,8 @@ In this project we aimed to implement a system like Golestan system (which is re
 
 - In Courses page, Students could see all the courses offered by university specified with their types and could easily add them to their new semester courses
 
+- Many different exceptions are considered for taking courses by students 
+
 - In Courses page, Students could also submit selected courses or delete them as they wish
 
 - In Courses page, The student could also search for a specific course
