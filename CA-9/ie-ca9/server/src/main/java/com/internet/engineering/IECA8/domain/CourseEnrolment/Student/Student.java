@@ -14,6 +14,8 @@ public class Student {
     @Expose
     private String id;
     @Expose
+    private String userId;
+    @Expose
     private String name;
     @Expose
     private String secondName;
