@@ -88,6 +88,26 @@ public class AuthController {
         return null;
     }
 
+    @PostMapping("/login2")
+    public String login(@RequestBody String jsonString, final HttpServletResponse response) throws IOException {
+        Gson gson = new Gson();
+        Properties properties = gson.fromJson(jsonString, Properties.class);
+        String email = properties.getProperty("email");
+        String password = properties.getProperty("password");
+        try {
+            if(StringUtils.hasIllegalChars(email) || StringUtils.hasIllegalChars(password)){
+                throw new ExceptionBadCharacters();
+            }
+            password = StringUtils.hashString(password);
+            Student student = CourseEnrolment.getInstance().loginStudent(email, password);
+            return JWTAuthorizationFilter.getJWTToken(student.getStudentId());
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+            response.sendError(HttpStatus.FORBIDDEN.value(), e.getMessage());
+        }
+        return null;
+    }
+
     @PostMapping("/forgetPassword")
     public String forgetPassword(@RequestBody String jsonString, final HttpServletResponse response) throws IOException {
         Gson gson = new Gson();
