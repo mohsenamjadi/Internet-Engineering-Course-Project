@@ -80,6 +80,20 @@ public class CoursesController {
         }
     }
 
+    @PostMapping("/advancedSearch")
+    public String searchFilter(@RequestBody(required = true) String jsonString, final HttpServletResponse response) throws IOException {
+        Gson gson = new Gson();
+        try {
+            Properties properties = gson.fromJson(jsonString, Properties.class);
+            String filter = properties.getProperty("filter");
+            CourseEnrolment.getInstance().getStudent().setSearchFilter(filter);
+            return Config.OK_RESPONSE;
+        } catch (Exception e) {
+            response.sendError(HttpStatus.NOT_FOUND.value(), e.getMessage());
+            return null;
+        }
+    }
+
     @PostMapping("/presentedCoursesByType")
     public List<Offering> getPresentedCoursesByType(@RequestBody(required = true) String jsonString, final HttpServletResponse response) throws IOException {
         Gson gson = new Gson();
