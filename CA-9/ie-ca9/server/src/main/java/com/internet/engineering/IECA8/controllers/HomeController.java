@@ -25,16 +25,6 @@ public class HomeController {
         }
     }
 
-    @GetMapping("/studentProfile2")
-    public String getStudent(final HttpServletResponse response) throws IOException {
-        Gson gson = new GsonBuilder().excludeFieldsWithoutExposeAnnotation().create();
-        try {
-            return gson.toJson(CourseEnrolment.getInstance().getStudent());
-        } catch (Exception e) {
-            response.sendError(HttpStatus.NOT_FOUND.value(), e.getMessage());
-            return null;
-        }
-    }
 
     @GetMapping("/studentProfile/gpa")
     public Double getStudentGPA(final HttpServletResponse response) throws IOException {
